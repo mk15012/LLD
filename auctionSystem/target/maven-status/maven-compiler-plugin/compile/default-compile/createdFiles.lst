@@ -1,0 +1,14 @@
+service/InMemoryService.class
+service/BuyerService.class
+service/AuctionService.class
+repository/SellerRepository.class
+manager/AuctionManager.class
+dto/Buyer.class
+repository/BuyerRepository.class
+service/SellerService.class
+repository/AuctionRepository.class
+constants/Commands.class
+dto/Seller.class
+manager/SellerManager.class
+AuctionApplication.class
+dto/Auction.class

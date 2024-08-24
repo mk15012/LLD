@@ -1,0 +1,17 @@
+service/InMemoryService.class
+dto/User.class
+service/MeetingService.class
+interestStrategy/SchedulerStrategy.class
+repository/UserRepository.class
+interestStrategy/RandomAllocationBasedScheduler.class
+repository/MeetingRoomRepository.class
+interestStrategy/MaxCapacityBasedScheduler.class
+service/MeetingRoomService.class
+interestStrategy/MinCapacityBasedScheduler.class
+service/SchedulerService.class
+MeetingApplication.class
+service/UserService.class
+dto/MeetingRoom.class
+dto/Meeting.class
+repository/MeetingRepository.class
+util/MeetingRoomUtil.class
