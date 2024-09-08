@@ -1,6 +1,7 @@
-package interestStrategy;
+package strategy.impl;
 
 import dto.MeetingRoom;
+import strategy.SchedulerStrategy;
 import util.MeetingRoomUtil;
 
 import java.util.List;

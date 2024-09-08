@@ -1,13 +1,14 @@
-package interestStrategy;
+package strategy.impl;
 
 import dto.MeetingRoom;
+import strategy.SchedulerStrategy;
 import util.MeetingRoomUtil;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class MaxCapacityBasedScheduler implements SchedulerStrategy {
+public class MinCapacityBasedScheduler implements SchedulerStrategy {
 
     @Override
     public MeetingRoom getMeetingRoom(long startTime, long endTime) {
