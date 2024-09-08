@@ -2,8 +2,8 @@ package service;
 
 import dto.Meeting;
 import dto.MeetingRoom;
-import interestStrategy.MaxCapacityBasedScheduler;
-import interestStrategy.SchedulerStrategy;
+import strategy.impl.MaxCapacityBasedScheduler;
+import strategy.SchedulerStrategy;
 
 import java.util.Objects;
 

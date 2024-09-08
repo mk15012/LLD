@@ -1,0 +1,37 @@
+stages:
+  - Build
+  - UT
+  - Deploy
+
+build-job:
+  stage: Build
+  image: openjdk:8
+  script:
+    - apt-get update && apt-get install -y maven
+    - mvn -v
+    - java -version
+    - mvn clean install -Dmaven.pmd.skip=true -U -Dmaven.javadoc.skip=true -Dmaven.test.skip=true
+
+
+unit-test-job:
+  stage: UT
+  image: openjdk:8
+  script:
+    - apt-get update && apt-get install -y maven
+    - mvn -v
+    - java -version
+    - mvn test
+
+
+deploy-job:
+  stage: Deploy
+  environment: production
+  before_script:
+
+  script:
+    - apt-get update && apt-get install -y maven
+    - mvn -v
+    - java -version
+
+    - echo "Deploying application..."
+    - echo "Application successfully deployed."
