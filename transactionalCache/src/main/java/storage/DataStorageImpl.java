@@ -70,6 +70,7 @@ public class DataStorageImpl implements DataStorage {
         if (this.isActiveTransaction) {
             if (snapshotMap.containsKey(key)) {
                 snapshotMap.remove(key);
+                this.isActiveTransaction = false;
             } else {
                 throw new Exception("No active transaction key present for rollback");
             }
