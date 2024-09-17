@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CacheImpl<K, V> implements Cache<K, V> {
+
     private final int capacity;
     private final Map<K, V> store;
     private final EvictionPolicy<K> evictionPolicy;

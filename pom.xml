@@ -25,6 +25,7 @@
         <module>jira</module>
         <module>fileSystem</module>
         <module>distributedCache</module>
+        <module>phoneBook</module>
     </modules>
 
     <properties>
