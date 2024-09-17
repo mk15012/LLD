@@ -8,8 +8,9 @@ import strategy.SearchStrategy;
 import java.util.List;
 
 public class ContactManager {
-    private Trie nameTrie;
-    private Trie numberTrie;
+
+    private final Trie nameTrie;
+    private final Trie numberTrie;
 
     public ContactManager() {
         nameTrie = new Trie();
